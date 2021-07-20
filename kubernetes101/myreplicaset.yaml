@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplicaset
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: site
+          image: kubedevio/nginx-color:blue
+          ports:
+            - containerPort: 80
