@@ -7,8 +7,6 @@ spec:
     matchLabels:
       app: nginx
   template:
-    apiVersion: v1
-    kind: Pod
     metadata:
       labels:
         app: nginx
