@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: site
-          image: kubedevio/nginx-color:blue
+          image: kubedevio/nginx-color:green
           ports:
             - containerPort: 80
